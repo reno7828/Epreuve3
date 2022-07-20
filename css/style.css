@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nova+Mono&family=Red+Hat+Display:ital,wght@0,400;1,300&display=swap');
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* color background found with https://imagecolorpicker.com/fr */
+    /* font family find with https://www.whatfontis.com/?s3 */
+    background: url("/assets/camera-1130731_1920.jpg") no-repeat fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nova Mono', monospace;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    align-items: center;
+    background: #47555e;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border-radius: 15px;
+    border: 2px solid rgba( 255, 255, 255, 0.18);
+}
+
+.lineTop {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 8%;
+}
+
+.lineLeft {
+    width: 40%;
+    height: 10%;
+    background: white;
+}
+
+.lineRight {
+    width: 40%;
+    height: 10%;
+    background: white;
+}
+
+.camera {
+    margin-right: -9em;
+    margin-top: -8em;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+}
+
+.lineBottom {
+    width: 100%;
+    height: 1%;
+    background: white;
+}
+
+.cardTarif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    background: rgba(8, 108, 165, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 15.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border-radius: 15px;
+    border: 2px solid rgba( 255, 255, 255, 0.18);
+    margin-top: 15em;
+}
+
+.cardTarif p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.contactCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 50%;
+    margin: auto;
+    align-items: center;
+    background: rgba(8, 108, 165, 0.15);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 15.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border-radius: 15px;
+    border: 2px solid rgba( 255, 255, 255, 0.18);
+    margin-top: 15em;
+}
+
+.contactCard label {
+    font-size: 1.5em;
+    color: #e2d7d3;
+}
+
+
+/*gallery css */
+
+.container {
+    margin-top: 105em;
+}
+
+.row {
+    color: black;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.portfolio-menu {
+    text-align: center;
+}
+
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all .5s ease;
+}
+
+.portfolio-item {
+    position: relative;
+    scroll-behavior: auto;
+    margin-top: 5em;
+}
+
+.portfolio-item .item {
+    /*width:303px;*/
+    float: left;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: left;
+    font-size: 1.5em;
+    position: relative;
+}
+
+@media screen and (max-device-width: 770) {
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: 60%;
+        margin: auto;
+        align-items: center;
+        background: #47555e;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 5.5px);
+        -webkit-backdrop-filter: blur( 5.5px);
+        border-radius: 15px;
+        border: 2px solid rgba( 255, 255, 255, 0.18);
+    }
+    .cardTarif {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1em;
+        width: 90%;
+        height: 600%;
+        margin-top: 15em;
+    }
+    .contactCard {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1em;
+        width: 90%;
+        height: 600%;
+        margin-top: 1em;
+        padding-left: 2em;
+    }
+    .portfolio-menu {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 1em;
+    }
+}
+
+.reseaux {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1027px) {
+    .cardTarif {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        width: 95%;
+        height: 600%;
+        margin-top: 40em;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .cardTarif {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        width: 95%;
+        height: 600%;
+        margin-top: 40em;
+    }
+    .contactCard {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        width: 95%;
+        height: 600%;
+        margin-top: 10em;
+        padding-left: 2em;
+    }
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: 60%;
+        margin: auto;
+        align-items: center;
+        background: #47555e;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 5.5px);
+        -webkit-backdrop-filter: blur( 5.5px);
+        border-radius: 15px;
+        border: 2px solid rgba( 255, 255, 255, 0.18);
+    }
+}
